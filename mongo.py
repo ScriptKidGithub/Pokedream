@@ -4,7 +4,6 @@ import umongo.fields as fields
 from umongo import Document
 
 
-
 class Trainer(Document):
     class Meta:
         strict = False

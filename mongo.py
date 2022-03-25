@@ -19,3 +19,11 @@ class Trainer(Document):
     gifts = fields.IntegerField(default=0)
 
     show_trainer_stats = fields.BooleanField(default=True)
+
+class Guild(Document):
+    class Meta:
+        strict = False
+
+    id = fields.IntegerField(attribute="_id")
+    prefix = fields.StringField(default=config.json.default.prefix)
+    blacklisted = fields.BooleanField(default=config.json.default.prefix)

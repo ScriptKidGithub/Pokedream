@@ -24,6 +24,6 @@ class Guild(Document):
     class Meta:
         strict = False
 
-    id = fields.IntegerField(attribute="_id")
+    guild_id = fields.IntegerField(attribute="_id")
     prefix = fields.StringField(default=config.json.default.prefix)
     blacklisted = fields.BooleanField(default=config.json.default.prefix)
